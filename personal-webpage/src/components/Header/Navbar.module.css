@@ -16,8 +16,8 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #937250;
-    color: white;
+    background-color: white;
+    color: #2d7a5e;
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 0.75rem;
@@ -64,7 +64,8 @@
 
 .contactButton:hover{
     cursor: pointer;
-     opacity: 0.8;
+    color: white;
+    background-color: rgb(31, 82, 64);
 }
 
 .link {
