@@ -1,0 +1,49 @@
+.background{
+    background-color: #2d7a5e;
+    position: relative;
+    z-index: 1;
+    height: 1000px;
+}
+
+.aboutMeModal{
+    display: flex;
+    grid-template-columns: 1fr;
+    width: 70%;
+    height: 50%;
+    border: 1px solid black;
+    background-color: white;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    border: none;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 2.5rem;
+    /* align-items: center; */
+    justify-items: center;
+    gap: 30px;
+    /* height: 100% */
+} 
+
+.carouselImg{
+   height: 50%;
+
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 6px rgb(44, 116, 92);
+
+}
+.aboutText{
+    padding: 0.3rem;
+}
+.aboutText em,
+.aboutText>h2 {
+    text-align: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.aboutText>p{
+    line-height: 1.5rem;
+}

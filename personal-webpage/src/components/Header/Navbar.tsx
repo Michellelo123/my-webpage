@@ -7,7 +7,7 @@ import styles from "./Navbar.module.css"
 
 // chekc the contact button do i like it? and the web responsive design
 export default function Navbar() {
-  const navLinks = ["About","Work","Education"]
+  const navLinks = ["About","Work","Education", "portfolio", "Skills"]
   const mappedNavLinks = navLinks.map(link => 
 <li key={link} className={styles.link}>{link}</li>
 )
