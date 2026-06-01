@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     /* margin: 10rem; */
     height: 100dvh;
-     background:url("./images/hero-background.svg");
+     background:url("/images/hero-background.svg");
     background-size: cover; 
     
      background-repeat: no-repeat; 
