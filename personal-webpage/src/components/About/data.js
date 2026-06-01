@@ -11,10 +11,10 @@ export const aboutMe = [
         subDescription: "In the last couple of years I mainly worked as a Dental Hygienist. The treatment I provided to my patients regardless of their age, state of their gum health or the number of teeth. 98% of the time, the process was exactly the same. I did this every work day for every patient. It became repetitive and I needed change. So I made the leap into tech.",
         image: "IMG_4326.PNG"
     },{
-        title: "Continuing Why Software Development?",
+        title: "Continuing... Why Software Development?",
         description: "What drew me to software development is that writing lines of code could create pretty much anything. Webpages, applications, games and more. Sometimes when I am working on a project, time flies.",
         subDescription: "I'm a visual person at heart, which is why I'm naturally drawn more to frontend work. I love the intersection of design and functionality — where things not only work well but feel good to use. Working inside the mouth with small tools and teeth have made me pretty nit-picky about the details, which as it turns out, is a great trait to have as a developer.",
-        image: "IMG_4323.PNG"
+        image: "dentalImg.jpg"
     },{
         title: "When I'm not coding/studying?",
         description: "I like to go on mini hikes or to the beach with my dogs. I wouldn't say I'm an expert in baking but I make pretty good chocolate chip cookies 🍪, and of course I bake dog biscuits, muffins and cake 🧁 (which they demolish and cry for) ",
