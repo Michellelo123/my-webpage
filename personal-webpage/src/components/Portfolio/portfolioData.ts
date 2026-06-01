@@ -1,7 +1,7 @@
 export const portfolioData = [
     {   id: 1,
         title:"Z-Energy Replica",
-        techStack: "HTML, CSS modules, React, JavaScript, Node.js, Express.js, MongoDB, Vercel, Render",
+        techStack: ["HTML", "CSS modules", "React", "JavaScript", "Node.js", "Express.js", "MongoDB", "Vercel", "Render"],
         imageSrc: "/images/Z-image.png",
         githubLink: "https://github.com/Michellelo123/Z-Energy-Replica",
         liveLink:"https://z-energy-replica.vercel.app/",
@@ -10,7 +10,7 @@ export const portfolioData = [
 },{
         id: 2,
         title:"AI Recipe Generator",
-        techStack: "HTML, Tailwind CSS, JavaScript, React, Node.js, Express.js, Anthropic API, Vercel, Render",
+        techStack: ["HTML", "Tailwind CSS", "JavaScript", "React", "Node.js", "Express.js", "Anthropic API", "Vercel", "Render"],
         imageSrc: "/images/recipe-img.png",
         githubLink: "https://github.com/Michellelo123/AI-Recipe-Generator-Test",
         liveLink:"https://ai-recipe-generator-test.vercel.app/",
@@ -18,7 +18,7 @@ export const portfolioData = [
 },{
         id: 3,
         title:"My Personal Webpage",
-        techStack: "HTML, CSS modules, JavaScript, React",
+        techStack: ["HTML", "CSS modules", "JavaScript", "React"],
         imageSrc: "/images/portfolio-img.png",
         githubLink: "https://github.com/Michellelo123/My-Personal-Webpage",
         liveLink:"https://my-personal-webpage.vercel.app/",

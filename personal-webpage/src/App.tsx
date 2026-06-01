@@ -5,6 +5,7 @@ import Navbar from "./components/Header/Navbar"
 import Hero from "./components/Hero/Hero"
 import Work from "./components/Work/Work"
 import Portfolio from "./components/Portfolio/Portfolio"
+
 export default function App() {
  
 
@@ -17,6 +18,7 @@ export default function App() {
       <Work/>
       <Portfolio/>
       <Contact/>
+  
     </>
   )
 }

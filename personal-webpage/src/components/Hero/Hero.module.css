@@ -83,7 +83,23 @@
     cursor: pointer;
     opacity: 0.5;
 }
+.socialLinks{
+    display: flex;
+    /* width: 10%; */
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
 
+.socialLinks>a{
+    font-size: 2rem;
+    color: #805838;
+    transition: all 0.3s ease;
+}
+.socialLinks>a:hover{
+    opacity: 0.7;
+    /* transform: scale(1.2); */
+    cursor: pointer;
+}
 /* @keyframes fadeIn{
     from{
         opacity: 0;

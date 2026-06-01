@@ -24,9 +24,11 @@ export default function Navbar() {
             </li>
             <div className={styles.rightLinks}>
             {mappedNavLinks}
-            <button className={styles.contactButton}>
+            <li>
+                <a href="#contact" className={styles.contactButton}>
                 CONTACT ME
-            </button>
+            </a>
+                </li>
             </div>
         </ul>
         

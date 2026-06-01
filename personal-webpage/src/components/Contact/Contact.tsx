@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Contact.module.css'
 import { motion } from 'framer-motion'
+import Footer from '../Footer/Footer'
 export default function Contact() {
   const formData = new FormData()
 
@@ -15,6 +16,8 @@ export default function Contact() {
 
 
   return (
+    <div
+    className={styles.layout}>
     <motion.section className={styles.contact} id="contact"
     initial={{ opacity: 0}}
   whileInView={{ opacity: 1}}
@@ -26,7 +29,8 @@ export default function Contact() {
             type="text" 
             placeholder="i.e Bob Smith" 
             value={formData.name} 
-            onChange={handleChange} />
+            onChange={handleChange} 
+            required/>
         </label>
         <br/>
         <label>Email:
@@ -34,7 +38,8 @@ export default function Contact() {
             type="text"
             placeholder= "bob.smith123@email.com"
             value={formData.email}
-            onChange={handleChange}/>
+            onChange={handleChange}
+            required/>
         </label>
         <br/>
         <label htmlFor="message">Message:
@@ -44,10 +49,16 @@ export default function Contact() {
             id="message"
             placeholder="Let me know how I can help you today" 
             value={formData.message} 
-            onChange={handleChange} ></textarea>
+            onChange={handleChange} 
+            required></textarea>
           <br/>
-        <button type="submit">Submit</button>
+        <button type="submit">
+          Submit
+        </button>
       </form>
+
     </motion.section>
+    <Footer />
+    </div>
   )
 }

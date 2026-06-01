@@ -1,3 +1,7 @@
+
+/* .layout{
+    margin-top: -3rem;
+} */
 .contact{
     display: flex;
     justify-content: center;
@@ -6,7 +10,11 @@
     opacity:0;
     animation: fadeIn 1.5s ease 0.3s forwards;
      background-repeat: no-repeat; 
-}
+    height: 80dvh;
+    align-items: center;
+    margin-top: -5rem;
+    }
+    
 
 .form{
     width: 60%;
@@ -14,9 +22,10 @@
     border: none;
     border-radius: 10px;
     padding: 2rem;
+    margin-top: -6rem;
     background-color: rgb(119, 80, 22);
-    height: auto;
-    margin-bottom: 50px;
+    /* height: 50%; */
+    /* margin-bottom: 50px; */
     box-shadow: 0px 5px 10px rgb(119, 80, 22);
 }
 
@@ -53,10 +62,14 @@ textarea{
     border-radius: 4px;
     border: none;
     box-shadow: 5px 5px 5px rgb(77, 48, 4);
+    transition: all 0.2s ease;
 }
 
 .form button:hover{
     cursor: pointer;
+    background-color: rgb(184, 156, 114);
+    color: white;
+    
     /* do something with the on hover */
 }
 

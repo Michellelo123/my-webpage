@@ -5,15 +5,23 @@ import { motion } from 'framer-motion'
 export default function Portfolio() {
 
   const mappedPortfolio = portfolioData.map(proj => {
+   
     return(
       <div key={proj.id} className={styles.project}>
         <img src={proj.imageSrc} alt={`image of ${proj.title}`} className={styles.projectImg}/>
           <h3>{proj.title}</h3>
         <div className={styles.description}>
-          <p>{proj.techStack}</p>
-          <a href={proj.githubLink}>{proj.githubLink}</a>
-          <br/>
-          <a href={proj.liveLink}>{proj.liveLink}</a>
+          <p className={styles.tech}>{proj.techStack.map((tech, index)=>(
+            <span key={index} className={styles.techStack}>
+              {tech}
+            </span>
+          ))}</p>
+          <div className={styles.links}>
+          <a href={proj.githubLink} target="_blank">Github link</a>
+          
+          <a href={proj.liveLink} target="_blank">Live demo</a>
+
+          </div>
           <p>{proj.description}</p>
 
         </div>
