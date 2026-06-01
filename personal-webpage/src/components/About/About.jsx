@@ -76,9 +76,9 @@ export default function About() {
             </button>
           )}
           <div className={`${styles.answer} ${open ? "" : styles.hidden}`}>
-            {showJoke && <p>"How do you comfort a Javascript bug?</p>}
+            {showJoke && <p>"How do you comfort a Javascript bug?"</p>}
             {loading && <p>Loading answer...</p>}
-            {showAnswer && <p>"You console it</p>}
+            {showAnswer && <p>"You console it"</p>}
           </div>
         </div>
       </motion.div>
