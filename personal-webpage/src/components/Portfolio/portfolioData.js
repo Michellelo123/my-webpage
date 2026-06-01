@@ -20,8 +20,8 @@ export const portfolioData = [
         title:"My Personal Webpage",
         techStack: ["HTML", "CSS modules", "JavaScript", "React"],
         imageSrc: "/images/portfolio-img.png",
-        githubLink: "https://github.com/Michellelo123/My-Personal-Webpage",
-        liveLink:"https://my-personal-webpage.vercel.app/",
+        githubLink: "https://github.com/Michellelo123/my-webpage",
+        liveLink:"https://my-webpage-6bbauu08x-michellelo123s-projects.vercel.app/",
         description:"Designed and developed a responsive personal webpage to showcase my skills and projects.  Utilized React for the frontend and deployed the site using Vercel."
 }
 ]
