@@ -89,6 +89,7 @@
 .nextIcon,
 .prevIcon {
   font-size: 3rem;
+  color: #2d7a5e;
 }
 
 .jokeBtn {
@@ -146,6 +147,18 @@
 
 .aboutMeModal::-webkit-scrollbar-thumb:hover {
   background: #2d5a4d;
+}
+
+@media (max-width: 480px) {
+  .carouselWrapper {
+    width: 85%;
+  }
+  .jokeBtn {
+    width: 85%;
+  }
+  .answer {
+    width: 85%;
+  }
 }
 
 @media (min-width: 1000px) {

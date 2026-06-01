@@ -6,17 +6,17 @@ export default function Hero() {
   return (
     <section className={styles.heroSection} id="hero">
       <motion.h1
-        initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2.5 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0 }}
       >
         Hi, I'm Michelle.
       </motion.h1>
       <motion.div
         className={styles.location}
-        initial={{ opacity: 0, x: 400 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2.5 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0, delay: 0.15 }}
       >
         <span className={styles.locationBackground}>
           <FaLocationDot className={styles.locationIcon} />
@@ -25,9 +25,9 @@ export default function Hero() {
       </motion.div>
       <motion.p
         className={styles.description}
-        initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2.5 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0, delay: 0.3 }}
       >
         I'm a career-changer with a love for clean design and a background in
         dental. When I'm not coding, you'll find me exploring the great outdoors

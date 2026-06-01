@@ -8,9 +8,11 @@
 body {
   font-family: "Inter", sans-serif;
   color: rgb(82, 41, 4);
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 section {
