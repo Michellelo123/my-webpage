@@ -1,10 +1,12 @@
-import React from 'react'
-import styles from './Footer.module.css'
+import React from "react";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
     <div className={styles.footer}>
-      <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+      <p>
+        &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
+      </p>
     </div>
-  )
+  );
 }
