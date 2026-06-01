@@ -5,7 +5,7 @@
 .contact{
     display: flex;
     justify-content: center;
-     background:url("./images/hero-background.svg");
+     background:url("/images/hero-background.svg");
     background-size: cover; 
     opacity:0;
     animation: fadeIn 1.5s ease 0.3s forwards;
