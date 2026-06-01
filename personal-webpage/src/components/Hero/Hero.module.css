@@ -1,14 +1,15 @@
-body{
-    height: 100vh;
+/* body{ */
+    /* height: 100vh; */
+
     /* background-color: #FBF2E2;
     background-color: #FAF1E1; */
     /* background:url("./images/hero-background.svg");
     background-size: cover; */
-    
+
     /* background-repeat: no-repeat; */
-    
-}
-body::before {
+
+/* } */
+/* body::before {
   content: '';
   position: absolute;
   top: 0;
@@ -20,16 +21,20 @@ body::before {
   background-position: center 90%;
   opacity: 0.7;
   z-index: -1;
-}
+} */
 
 .heroSection{
     /* border: 1px solid pink; */
     display: flex;
     flex-direction: column;
     padding-top: 15rem;
+    /* padding-bottom: 10rem; */
     align-items: center;
-    height: 90dvh;
+    height: 100dvh;
     text-align: center;
+    background: url("./images/hero-background.svg");
+  background-size: cover;
+  background-position: center 90%;
 }
 .heroSection h1{
     /* clamp(minimum, preferred, maximum) */
@@ -38,9 +43,15 @@ body::before {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    /* animation: fadeIn 5s ease 0.3s forwards; */
+    /* opacity:0; */
+
 }
 .locationIcon{
-    color:#4a7d6f
+    color:#4a7d6f;
+    /* animation: fadeIn 5s ease 1.3s forwards; */
+    /* opacity:0; */
+
 }
 .location{
     display: flex;
@@ -48,19 +59,52 @@ body::before {
     gap: 10px;
     margin-top: 10px;
     font-size: clamp(1rem, 5vw, 1.2rem);
+    /* animation: fadeIn 5s ease 1.3s forwards; */
+    /* opacity:0; */
+
     /* border: 1px solid black; */
 }
 .description{
     max-width: 60%;
     /* min-width: 50%; */
     margin-top: 1.5rem;
+    /* animation: fadeIn 1.5s ease 3s forwards; */
+    /* opacity:0; */
+
+
 }
 
 .aboutMe{
     color:#2d7a5e;
     transition: all 0.3s ease;
+    /* animation: fadeIn 1.5s ease 0.3s forwards; */
 }
 .aboutMe:hover{
     cursor: pointer;
     opacity: 0.5;
 }
+.socialLinks{
+    display: flex;
+    /* width: 10%; */
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.socialLinks>a{
+    font-size: 2rem;
+    color: #805838;
+    transition: all 0.3s ease;
+}
+.socialLinks>a:hover{
+    opacity: 0.7;
+    /* transform: scale(1.2); */
+    cursor: pointer;
+}
+/* @keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} */

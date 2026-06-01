@@ -1,0 +1,60 @@
+body{
+    height: 100dvh;
+    /* background-color: #FBF2E2;
+    background-color: #FAF1E1; */
+    /* background:url("./images/hero-background.svg");
+    background-size: cover; */
+    
+    /* background-repeat: no-repeat; */
+}
+.workSection>h1{
+    opacity:0;
+    animation: fadeIn 1.5s ease 0.3s forwards;
+}
+
+     /* background:url("./images/hero-background.svg"); */
+    /* background-size: cover;  */
+    /* opacity:0.4; */
+    
+     /* background-repeat: no-repeat;  */
+     /* background-color:#e9edc9; */
+
+.hr{
+    width: 80%;
+    margin: 0 auto;
+}
+.jobDiv{
+    width: 10%;
+    border: 1px solid black;
+
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.popUp{
+    opacity:0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.popUp:hover{
+    opacity: 1;
+}
+/* .jobDiv:hover .popUp{
+    display:block;
+} */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
