@@ -1,6 +1,6 @@
 import styles from "./About.module.css";
 import { aboutMe } from "./data";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FaSquareCaretRight, FaSquareCaretLeft } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -10,6 +10,7 @@ export default function About() {
   const [showJoke, setShowJoke] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
   const [loading, setLoading] = useState(false);
+  const modalRef = useRef(null);
 
   const currentPage = (
     <>
@@ -49,11 +50,13 @@ export default function About() {
     currentIndex === aboutMe.length - 1
       ? setCurrentIndex(0)
       : setCurrentIndex((prev) => prev + 1);
+    if (modalRef.current) modalRef.current.scrollTop = 0;
   }
   function prevPic() {
     currentIndex === 0
       ? setCurrentIndex(aboutMe.length - 1)
       : setCurrentIndex((prev) => prev - 1);
+    if (modalRef.current) modalRef.current.scrollTop = 0;
   }
 
   return (
@@ -92,7 +95,7 @@ export default function About() {
         <button onClick={prevPic} className={styles.prevBtn}>
           <FaSquareCaretLeft className={styles.prevIcon} />
         </button>
-        <div className={styles.aboutMeModal}>{currentPage}</div>
+        <div className={styles.aboutMeModal} ref={modalRef}>{currentPage}</div>
         <button onClick={nextPic} className={styles.nextBtn}>
           <FaSquareCaretRight className={styles.nextIcon} />
         </button>
