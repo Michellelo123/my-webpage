@@ -29,10 +29,10 @@ export default function Hero() {
   transition={{ duration: 2.5 }}
         >I'm a career-changer with a love for clean design and a background in dental. When I'm not coding, you'll find me exploring the great outdoors with my two dogs. Learn more <a href="/about" className={styles.aboutMe}>about me</a>.</motion.p>
       <div className = {styles.socialLinks}>
-            <a href="https://github.com/Michelle123" target="_blank">
+            <a href="https://github.com/Michellelo123" target="_blank">
               <FaSquareGithub/>
             </a>
-            <a href="https://linkedin.com/in/https://www.linkedin.com/in/michelle-looc/" target="_blank" >
+            <a href="https://www.linkedin.com/in/michelle-looc/" target="_blank" >
               <FaLinkedin/>
             </a>
       </div>
