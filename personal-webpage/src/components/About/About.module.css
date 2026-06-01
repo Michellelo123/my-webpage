@@ -1,49 +1,184 @@
 .background{
-    background-color: #2d7a5e;
+    background-color: #a5997e;
+    background: url("/images/about-background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     z-index: 1;
     height: 1000px;
 }
+.background h1{
+    padding: 1rem;
+    opacity:0;
+    animation: fadeIn 3s ease 0.3s forwards;
 
-.aboutMeModal{
+}
+.background > p{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.carouselWrapper{
     display: flex;
-    grid-template-columns: 1fr;
-    width: 70%;
-    height: 50%;
-    border: 1px solid black;
-    background-color: white;
-    position:absolute;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     top: 10%;
+    gap: 10px;
+}
+
+.aboutMeModal{
+    display: flex;
+    scroll-padding-top: 0;
+    flex-direction: column;
+    flex: 1;
+    height: 500px;
+    background-color: white;
     border: none;
     border-radius: 30px;
-    border: 2px solid black;
     padding: 2.5rem;
-    /* align-items: center; */
+    align-items: flex-start;
     justify-items: center;
     gap: 30px;
-    /* height: 100% */
-} 
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 10px 5px rgb(94, 153, 201);
+     opacity:0;
+    animation: fadeIn 1.5s ease 0.3s forwards;
+}
 
 .carouselImg{
-   height: 50%;
-
+    flex:1;
+    width: 50%;
+    align-self: center;
+    /* max-width: 300px; */
+    height: auto;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px 6px rgb(44, 116, 92);
+    border: 6px dotted rgb(247, 190, 34);
 
 }
 .aboutText{
+    flex:2;
     padding: 0.3rem;
 }
-.aboutText em,
+
 .aboutText>h2 {
     text-align: center;
-    align-content: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .aboutText>p{
     line-height: 1.5rem;
+}
+
+.nextBtn,
+.prevBtn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    align-self: center;
+     opacity:0;
+    animation: fadeIn 1.5s ease 0.3s forwards;
+}
+.nextIcon,
+.prevIcon{
+    font-size: 3rem;
+}
+
+.jokeBtn{
+    background-color: white;
+    border: 2px solid #2d7a5e;
+    border-radius: 6px;
+    padding: 0.3rem;
+    color: #2d7a5e;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 30%;
+     opacity:0;
+    animation: fadeIn 1.5s ease 0.3s forwards;
+}
+.aboutHeader{
+    display:flex;
+    flex-direction: column;
+}
+/* .answer{
+    display: none;
+}
+
+.open{
+    display: block;
+} */
+
+.joke{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.answer{
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #2d7a5e;
+    border-radius: 6px;
+    padding: 0.3rem;
+    color: #2d7a5e;
+    margin-top: 10px;
+
+}
+.hidden{
+    display: none;
+    background-color: none;
+    border: 2px solid #2d7a5e;
+}
+
+/* the scrollbar track (background) */
+.aboutMeModal::-webkit-scrollbar {
+  width: 10px;
+}
+
+.aboutMeModal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* the draggable part */
+.aboutMeModal::-webkit-scrollbar-thumb {
+  background: #2d7cd6;
+  border-radius: 10px;
+}
+
+.aboutMeModal::-webkit-scrollbar-thumb:hover {
+  background: #2d5a4d;
+}
+
+
+
+
+@media (min-width: 810px) {
+   .aboutMeModal{
+       flex-direction: row;
+   } 
+   .carouselImg{
+    max-width: 370px;
+    width: 55%;
+    height: auto;
+   }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

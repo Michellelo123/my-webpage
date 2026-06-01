@@ -6,10 +6,11 @@ import styles from "./Navbar.module.css"
 
 
 // chekc the contact button do i like it? and the web responsive design
+// hamburger when screeen smaller 
 export default function Navbar() {
-  const navLinks = ["About","Work","Education", "portfolio", "Skills"]
+  const navLinks = ["About","Work", "portfolio" ]
   const mappedNavLinks = navLinks.map(link => 
-<li key={link} className={styles.link}>{link}</li>
+<li key={link} className={styles.link}><a href={`#${link.toLowerCase()}`}>{link}</a></li>
 )
   
   
@@ -18,7 +19,7 @@ export default function Navbar() {
     <nav className={styles.navBar} >
         <ul className={styles.navLinks}>
             <li className={styles.nameLogo}>
-                ML.
+                <a href="#hero">ML.</a>
                 <span className={styles.tooltip}>Home</span>
             </li>
             <div className={styles.rightLinks}>
