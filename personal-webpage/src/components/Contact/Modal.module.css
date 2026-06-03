@@ -1,0 +1,20 @@
+.modal {
+    background-color: rgba(255, 255, 255);
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(104, 67, 0);
+    border: 1px solid rgb(104, 67, 0);
+    border-radius: 10px;
+}
+
+.modalShow{
+    /* display: flex; */
+    display:flex;
+}

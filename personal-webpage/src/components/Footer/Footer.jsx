@@ -3,10 +3,10 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <p>
         &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
       </p>
-    </div>
+    </footer>
   );
 }
