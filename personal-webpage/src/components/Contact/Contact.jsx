@@ -97,7 +97,7 @@ export default function Contact() {
           <br />
           <textarea
             id="message"
-            placeholder="Website still under construction, this contact form is not function yet."
+            placeholder="Write your message here..."
             value={message}
             onChange={e=>setMessage(e.target.value)}
             required
